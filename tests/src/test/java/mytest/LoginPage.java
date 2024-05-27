@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
 
-    private By emailInputBy = By.id("login-email-input");  // Adjust ID based on actual element
-    private By passwordInputBy = By.id("login-password-input");  // Adjust ID based on actual element
-    private By loginButtonBy = By.className("login-button");  // Adjust class based on actual element
+    private By emailInputBy = By.id("login-email-input"); 
+    private By passwordInputBy = By.id("login-password-input"); 
+    private By loginButtonBy = By.className("login-button"); 
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -28,7 +28,7 @@ public class LoginPage extends BasePage {
         System.out.println("Login button found");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", loginButton);
-        return new MainPage(this.driver);  // Assuming login redirects to main page
+        return new MainPage(this.driver);  
     }
 }
 

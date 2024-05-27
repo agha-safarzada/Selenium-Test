@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchResultPage extends BasePage {
 
-    private By searchResultsBy = By.xpath("//input[@class='search-bar']"); ;  // Adjust the selector based on actual search result element
+    private By searchResultsBy = By.xpath("//input[@class='search-bar']"); ;  
 
     public SearchResultPage(WebDriver driver) {
         super(driver);

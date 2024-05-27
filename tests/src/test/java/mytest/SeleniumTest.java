@@ -28,7 +28,7 @@ public class SeleniumTest {
     @Test
     public void testFooterText() {
         MainPage mainPage = new MainPage(this.driver);
-        Assert.assertTrue(mainPage.getFooterText().contains("2024")); // Adjust based on actual footer content
+        Assert.assertTrue(mainPage.getFooterText().contains("2024")); 
     }
 
     @Test
